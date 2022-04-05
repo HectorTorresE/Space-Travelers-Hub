@@ -1,30 +1,30 @@
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const links = [
-    {
-      id: 1,
-      path: '/',
-      text: 'Rockets',
-    },
-    {
-      id: 2,
-      path: '/missions',
-      text: 'Missions',
-    },
-    {
-      id: 3,
-      path: '/profile',
-      text: 'My Profile',
-    },
-  ];
+  {
+    id: 1,
+    path: '/',
+    text: 'Rockets',
+  },
+  {
+    id: 2,
+    path: '/missions',
+    text: 'Missions',
+  },
+  {
+    id: 3,
+    path: '/profile',
+    text: 'My Profile',
+  },
+];
 
 const NavBar = () => (
-    <nav>
-      <div className="header">
-        <h1>Space Travelers&apos; Hub</h1>
-      </div>
-      <div className="navlinks">
+  <nav>
+    <div className="header">
+      <h1>Space Travelers&apos; Hub</h1>
+    </div>
+    <div className="navlinks">
       {
       links.map((link) => (
         <NavLink
@@ -36,7 +36,7 @@ const NavBar = () => (
       ))
     }
     </div>
-    </nav>
-  );
+  </nav>
+);
 
 export default NavBar;
