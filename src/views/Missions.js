@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Mission from '../components/Mission';
 import { getMissions } from '../redux/missions/missions';
 
 const Missions = () => {
@@ -17,20 +18,12 @@ const Missions = () => {
       <ul>
 
         {(missions || []).map((mission) => (
-          <li key={mission.mission_id}>
-            mission_id:
-            {' '}
-            {mission.mission_id}
-            ,
-            mission_name:
-            {' '}
-            {mission.mission_name}
-            ,
-            description:
-            {' '}
-            {mission.description}
-            ,
-          </li>
+          <Mission
+            key={mission.mission_id}
+            mission_id={mission.mission_id}
+            mission_name={mission.mission_name}
+            description={mission.description}
+          />
         ))}
       </ul>
     </div>
