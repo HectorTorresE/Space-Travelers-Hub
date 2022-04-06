@@ -14,6 +14,18 @@
   --button-cancel-rocket-color: gray;
 }
 
+.badge {
+  display: inline-block;
+  background: #12a3a8;
+  color: #fff;
+  padding: 1px 5px 3px;
+  border-radius: 5px;
+}
+
+.badge.disabled {
+  background: #777;
+}
+
 body {
   margin: 0;
   font-family:
