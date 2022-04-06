@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-rockets-background: #157ffb;
+  --button-rockets-color: #fff;
+  --badge-rockets-background: #25a1b7;
+  --badge-rockets-color: #fff;
+}
+
 body {
   margin: 0;
   font-family:
@@ -16,24 +30,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
-}
-
-.badge {
-  display: inline-block;
-  background: #12a3a8;
-  color: #fff;
-  padding: 1px 5px 3px;
-  border-radius: 5px;
-}
-
-.badge.disabled {
-  background: #777;
-}
