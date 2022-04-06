@@ -1,6 +1,5 @@
 /* eslint-disable camelcase */
 export default function Mission(props) {
-  // eslint-disable-next-line react/prop-types
   const {
     // eslint-disable-next-line react/prop-types
     mission_name, description, reserved, onJoin, onLeave,
