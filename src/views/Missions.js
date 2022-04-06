@@ -1,3 +1,4 @@
+import './Missions.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Mission from '../components/Mission';
@@ -13,10 +14,14 @@ const Missions = () => {
   }, [missions]);
 
   return (
-    <div>
-      <h1>Missions</h1>
-      <ul>
-
+    <div className="Missions">
+      <table className="mission-list">
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th> </th>
+        </tr>
         {(missions || []).map((mission) => (
           <Mission
             key={mission.mission_id}
@@ -25,7 +30,7 @@ const Missions = () => {
             description={mission.description}
           />
         ))}
-      </ul>
+      </table>
     </div>
   );
 };
