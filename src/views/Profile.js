@@ -2,6 +2,7 @@ import './Profile.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions } from '../redux/missions/missions';
+import RocketsReserved from '../components/Rockets/RocketsReserved';
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,8 @@ const Profile = () => {
   useEffect(() => {
     if (missions === null)dispatch(getMissions());
   }, [missions]);
+
+  const rocketsList = useSelector((state) => state.rockets.rockets);
   return (
     <div className="Profile">
       <div className="col">
@@ -25,7 +28,7 @@ const Profile = () => {
         </ul>
       </div>
       <div className="col">
-        <h1>My Rockets</h1>
+        <RocketsReserved rockets={rocketsList.filter((rocket) => rocket.reserved)} />
       </div>
     </div>
   );
