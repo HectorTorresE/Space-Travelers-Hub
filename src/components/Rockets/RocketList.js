@@ -12,6 +12,7 @@ const RocketList = ({ rockets }) => (
           name={rocket.name}
           description={rocket.description}
           image={rocket.image}
+          reserved={rocket.reserved}
         />
       ))
     }
@@ -24,6 +25,7 @@ RocketList.propTypes = {
     name: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
+    reserved: PropTypes.bool,
   })).isRequired,
 };
 
