@@ -15,6 +15,11 @@
   margin: 0 10px;
 }
 
+.Missions button.warning {
+  border-color: #f44;
+  color: #f44;
+}
+
 .Missions td,
 .Missions th {
   border: solid 1px #ccc;

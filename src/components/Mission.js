@@ -1,7 +1,10 @@
 /* eslint-disable camelcase */
 export default function Mission(props) {
   // eslint-disable-next-line react/prop-types
-  const { mission_name, description } = props;
+  const {
+    // eslint-disable-next-line react/prop-types
+    mission_name, description, reserved, onJoin, onLeave,
+  } = props;
   return (
     <tr>
       <td>
@@ -14,7 +17,9 @@ export default function Mission(props) {
         <div className="badge disabled">NOT A MEMBER</div>
       </td>
       <td>
-        <button type="button">Join Mission</button>
+        {reserved
+          ? <button className="warning" type="button" onClick={onLeave}>Leave Mission</button>
+          : <button type="button" onClick={onJoin}>Join Mission</button>}
       </td>
     </tr>
   );
