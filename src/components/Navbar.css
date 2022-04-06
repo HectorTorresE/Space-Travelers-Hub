@@ -4,8 +4,11 @@ nav {
   padding: 2% 5%;
   border-bottom: 1px solid lightgray;
 }
-
+nav img {
+  width: 50px;
+}
 .header {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -18,10 +21,19 @@ nav {
 
 .navlinks a {
   text-decoration: none;
-  color: black;
+  color: #157ffb;
 }
 
 .navlinks a.active {
   text-decoration: underline;
-  color: blue;
+  color: #1361bb;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+.navlinks a:last-child {
+  border-left:  2px solid black;
+  padding-left: 16px;
 }

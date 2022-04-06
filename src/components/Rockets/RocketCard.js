@@ -15,7 +15,7 @@ const RocketCard = ({
   };
   return (
     <div className="rocket-card">
-      <img src={image} alt="rocket type" width={200} height={150} />
+      <img src={image} alt="rocket type" />
       <div className="info-rocket">
         <h3 className="text-rocket">{name}</h3>
         <p className="text-rocket">

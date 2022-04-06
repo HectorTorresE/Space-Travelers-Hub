@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   min-height: 180px;
+  align-content: stretch;
 }
 
 .text-rocket {
@@ -9,8 +10,8 @@
 }
 
 .rocket-card img {
-  width: 200px;
-  height: auto;
+  width: 240px;
+  object-fit: cover;
 }
 
 .info-rocket {
