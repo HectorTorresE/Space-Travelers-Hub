@@ -39,8 +39,8 @@ To get a local copy follow these simple example steps.
 
 - GitHub: [@HectorTorres](https://github.com/HectorTorresE)
 - Twitter: [@HectorT](https://twitter.com/HectorT00406915)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hectorjte/)
-- 
+- LinkedIn: [@Hectorjte](https://www.linkedin.com/in/hectorjte/)
+
 👤 **Juan Luis Palacios**
 
 - GitHub: [@JuanLPalacios](https://github.com/JuanLPalacios)
