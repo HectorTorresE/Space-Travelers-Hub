@@ -13,7 +13,9 @@ export default function Mission(props) {
         {description}
       </td>
       <td>
-        <div className="badge disabled">NOT A MEMBER</div>
+        {reserved
+          ? <div className="badge">Active Member</div>
+          : <div className="badge disabled">NOT A MEMBER</div>}
       </td>
       <td>
         {reserved
