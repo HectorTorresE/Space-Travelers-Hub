@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Mission from '../components/Mission';
 import { getMissions, joinMission, leaveMission } from '../redux/missions/missions';
+import { getMissions, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
