@@ -1,0 +1,33 @@
+.Profile {
+  display: flex;
+  flex-direction: row;
+  padding: 28px 5%;
+  text-align: left;
+  gap: 30px;
+}
+
+.Profile > * {
+  flex: 1 1 auto;
+}
+
+.Profile ul {
+  list-style: none;
+  padding: 0;
+  border: solid 1px #777;
+  border-radius: 5px;
+}
+
+.Profile li {
+  min-height: 60px;
+  padding: 10px 20px;
+  border-bottom: solid 1px #777;
+}
+
+.Profile li:last-child {
+  border: none;
+}
+
+.Profile h1 {
+  margin-block: 5px;
+  font-weight: normal;
+}

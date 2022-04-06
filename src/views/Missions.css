@@ -1,0 +1,47 @@
+.Missions {
+  padding: 28px 5%;
+}
+
+.Missions .mission-list {
+  border: solid 1px #ccc;
+  border-collapse: collapse;
+}
+
+.Missions button {
+  border: solid 1px #777;
+  border-radius: 5px;
+  background: inherit;
+  padding: 8px;
+  margin: 0 10px;
+}
+
+.Missions button.warning {
+  border-color: #f44;
+  color: #f44;
+}
+
+.Missions td,
+.Missions th {
+  border: solid 1px #ccc;
+  padding: 10px 6px;
+  text-align: left;
+}
+
+.Missions table tr:nth-child(2n) {
+  background: #eee;
+}
+
+.Missions table td:nth-child(1) {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.Missions table td:nth-child(3),
+.Missions table td:nth-child(4) {
+  text-align: center;
+}
+
+.Missions table button,
+.Missions table .badge {
+  white-space: nowrap;
+}
