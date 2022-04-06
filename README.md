@@ -20,10 +20,10 @@
 To get a local copy follow these simple example steps.  
 
 1.- Open the terminal window and clone the repository using this command:  
-`git@github.com:HectorTorresE/Space-Travelers-Hub.git` 
+`git clone https://github.com/HectorTorresE/Space-Travelers-Hub.git` 
 
 2.- Change the directory to the react-bookstore directory  
-`cd space-travelers`  
+`cd Space-Travelers-Hub`  
 3.- Install the project's dependencies by running this command:   
 `npm install`  
 4.- Generate the dist folder using this command:  
