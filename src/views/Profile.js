@@ -1,3 +1,4 @@
+import './Profile.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions } from '../redux/missions/missions';
@@ -13,7 +14,7 @@ const Profile = () => {
   }, [missions]);
   return (
     <div className="Profile">
-      <div>
+      <div className="col">
         <h1>My Missions</h1>
         <ul>
           {(missions || []).map((mission) => (
@@ -23,7 +24,7 @@ const Profile = () => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="col">
         <h1>My Rockets</h1>
       </div>
     </div>
