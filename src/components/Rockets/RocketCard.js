@@ -17,8 +17,8 @@ const RocketCard = ({
     <div className="rocket-card">
       <img src={image} alt="rocket type" width={200} height={150} />
       <div className="info-rocket">
-        <h3>{name}</h3>
-        <p>
+        <h3 className="text-rocket">{name}</h3>
+        <p className="text-rocket">
           {reserved && <span className="rocket-reserved">Reserved</span>}
           {description}
         </p>

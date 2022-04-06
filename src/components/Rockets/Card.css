@@ -4,6 +4,10 @@
   min-height: 180px;
 }
 
+.text-rocket {
+text-align: left;
+}
+
 .rocket-card img {
   width: 200px;
   height: auto;
